@@ -95,3 +95,24 @@ async function queryJob() {
 	}));
 	return result;
 }
+
+//获取url地址问号后面的id
+function getQueryVariable(variable) { //获取参数id
+	// var qs = window.location.search.substring(1); //获得了当前链接的中?号后的参数
+	// location.search的值就是 "?i=1 "
+	// substr(1) 就是从索引1开始截取
+	// 所以以这个页面为例的话location.search.substring(1) 的值就是 "i=1 "
+
+
+
+	var query = window.location.search.substring(1);
+	var vars = query.split("&");
+	for (var i = 0; i < vars.length; i++) {
+		var pair = vars[i].split("=");
+		if (pair[0] == variable) {
+			return pair[1];
+		}
+	}
+	return (false);
+}
+String.prototype.getQueryVariable = getQueryVariable;

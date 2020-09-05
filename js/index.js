@@ -92,7 +92,7 @@ $(function(){
 
     //控制组织结构和客户管理点击切换
     function handGroup(index) {
-        console.log($itemBoxList);
+        // console.log($itemBoxList);
         let $group1 = $itemBoxList.filter((_, item) => {
             let text = $(item).attr("text");
             // console.log(text);
