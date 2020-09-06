@@ -65,8 +65,8 @@ $(function(){
                 客服管理
                 </h3>
                 <nav class="item">
-                    <a href="page/customerlist.html" target="iframeBox">我的客服<a>
-                    <a href="page/customerlist.html" target="iframeBox">全部客服<a>
+                    <a href="page/customerlist.html?lx=my" target="iframeBox">我的客服<a>
+                    <a href="page/customerlist.html?lx=all" target="iframeBox">全部客服<a>
                     <a href="page/customeradd.html" target="iframeBox">新增客服<a>
                 </nav>
             </div>

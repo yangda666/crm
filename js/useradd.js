@@ -59,7 +59,7 @@ $(function(){
     function checkName() {
         let val = $(".username").val().trim();
         if (val.length === 0) {
-            $(".sapnusername").html("此项为必填项")
+            $(".spanusername").html("此项为必填项")
             return false;
         }
         //用户名必须填写真实姓名
@@ -121,7 +121,7 @@ $(function(){
             jobId:$(".userjob").val(),
             desc:$(".userdesc").val().trim()
         }
-
+        //实现修改
         if (userId) {
             params.userId = userId
             let result = await axios.post("/user/update", params)

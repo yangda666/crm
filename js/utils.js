@@ -102,9 +102,6 @@ function getQueryVariable(variable) { //获取参数id
 	// location.search的值就是 "?i=1 "
 	// substr(1) 就是从索引1开始截取
 	// 所以以这个页面为例的话location.search.substring(1) 的值就是 "i=1 "
-
-
-
 	var query = window.location.search.substring(1);
 	var vars = query.split("&");
 	for (var i = 0; i < vars.length; i++) {

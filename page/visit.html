@@ -31,14 +31,14 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
+				<!-- <tr>
 					<td class="w5">1</td>
 					<td class="w15">2019-09-17</td>
 					<td class="w70 wrap">今天天气真的不错，我去拜访了客户，客户给我一根雪糕，但是雪糕还化了</td>
 					<td class="w10">
 						<a href="javascript:;">删除</a>
 					</td>
-				</tr>
+				</tr> -->
 			</tbody>
 		</table>
 		<div class="infoBox" style="width:50%">
@@ -47,15 +47,21 @@
 					<span>拜访日期</span>
 					<input type="date" class="visitTime">
 				</div>
-				<span></span>
+				<span class="spanTime"></span>
 			</div>
-
+			<div class="form" style="display:none">
+				<div class="inpBox">
+					<span>拜访纪要</span>
+					<textarea class="vID"></textarea>
+				</div>
+				<span class="spanVisit"></span>
+			</div>
 			<div class="form">
 				<div class="inpBox">
 					<span>拜访纪要</span>
 					<textarea class="visitText"></textarea>
 				</div>
-				<span></span>
+				<span class="spanVisit"></span>
 			</div>
 
 			<button class="submit">确认提交</button>
@@ -63,6 +69,11 @@
 	</div>
 
 	<!-- IMPORT JS -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/axios.min.js"></script>
+	<script src="../js/axios.defaults.js"></script>
+	<script src="../js/utils.js"></script>
+	<script src="../js/visit.js"></script>
 </body>
 
 </html>

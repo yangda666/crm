@@ -78,7 +78,7 @@ $(function(){
             let target = e.target,
                 text = target.innerHTML.trim();
                 // console.log(text);
-                let userId = $(target).parent().attr("userid")
+            let userId = $(target).parent().attr("userid")
                 // console.log(userId);
             if(text ==="编辑"){
                 window.location.href = `useradd.html?id=${userId}`
